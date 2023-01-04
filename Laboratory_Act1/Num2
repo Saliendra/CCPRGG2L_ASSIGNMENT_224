@@ -6,13 +6,12 @@ public class Num2 {
     try (BufferedReader br = new BufferedReader(new FileReader("dummy.txt"))) {
       String text;
 
-    int lineCount = 0;
+     int lines = 0;
 
-      while ((text = br.readLine()) != null && lineCount < 5) {
+      while ((text = br.readLine()) != null && lines < 5) {
         System.out.println(text);
         
-        lineCount++;
-        br.close();
+        lines++;
 
       }
     } 

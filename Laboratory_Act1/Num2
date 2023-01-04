@@ -12,8 +12,14 @@ public class Num2 {
         System.out.println(text);
         
         lines++;
-
       }
+      }
+
+      catch(IOException e){
+       System.out.println("Something went wrong");  
+
+     }
+      
     } 
   }
-}
+

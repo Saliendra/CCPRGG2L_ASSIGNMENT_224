@@ -5,7 +5,7 @@ public class Num1 {
 
         int sum = 0;
         
-        try (BufferedReader data = new BufferedReader(new FileReader("E:\\Programming\\Code1\\Code1\\src\\data.txt"))) {
+        try (BufferedReader data = new BufferedReader(new FileReader("data.txt"))) {
             String text;
             
             while ((text = data.readLine()) != null) {

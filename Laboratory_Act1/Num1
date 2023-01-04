@@ -16,10 +16,8 @@ public class Num1 {
             }
         } catch (IOException e) {
         
-            System.out.println(e.getMessage());
+            System.out.println("Something went wrong " + e.getMessage());
         }
- 
-
     
         try (PrintWriter pw = new PrintWriter(new FileWriter("sum.txt"))) {
        
@@ -27,7 +25,7 @@ public class Num1 {
             System.out.println("File sum created succesfully");
             
         } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Something went wrong " + e.getMessage());
         }
     }
 }

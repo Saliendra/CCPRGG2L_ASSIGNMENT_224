@@ -1,0 +1,20 @@
+import java.io.*;
+
+public class Num2 {
+  public static void main(String[] args) throws IOException, FileNotFoundException{
+
+    try (BufferedReader br = new BufferedReader(new FileReader("dummy.txt"))) {
+      String text;
+
+    int lineCount = 0;
+
+      while ((text = br.readLine()) != null && lineCount < 5) {
+        System.out.println(text);
+        
+        lineCount++;
+        br.close();
+
+      }
+    } 
+  }
+}
